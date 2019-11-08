@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, memo } from 'react';
 // import { connect } from 'react-redux';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeInput, insert, toggle, remove } from '../modules/todos';
@@ -69,4 +69,4 @@ const TodosContainer = () => {
   );
 };
 
-export default TodosContainer;
+export default memo(TodosContainer);
